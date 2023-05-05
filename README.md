@@ -28,8 +28,6 @@ The extension consists of the following files:
 
 - `manifest.json`: The manifest file containing metadata about the extension.
 - `contentScript.js`: The content script that modifies the target website's DOM to add the toggle button and implement the show/hide functionality for the sidebar.
-- `popup.html`: A simple popup containing a button that activates the content script.
-- `popup.js`: JavaScript file that listens for clicks on the button in the popup and sends a message to the content script to execute its functionality.
 
 ## License
 
