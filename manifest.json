@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Sidebar Toggle",
+  "version": "1.0",
+  "description": "A simple extension to toggle the sidebar visibility on a specific website.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
